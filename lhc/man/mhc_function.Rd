@@ -4,16 +4,16 @@
 \alias{mhc_function}
 \title{Median Hill Climbing function}
 \usage{
-mhc_function(X, Co)
+mhc_function(X, Co, y)
 }
 \arguments{
-\item{X,Co}{This takes in the input of the vector for set of inputs and the randomly generated coefficients}
+\item{X,Co,y}{This takes in the input of the vector for set of inputs, the randomly generated coefficients, and the mode of connection}
 }
 \description{
 This function implements hill climbing algorithm with median ascent
 }
 \examples{
-mhc_function(X,Co)
+mhc_function(X,Co,y)
 }
-\keyword{median}
+\keyword{steepest}
 
