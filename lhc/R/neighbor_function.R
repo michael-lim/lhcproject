@@ -10,13 +10,21 @@
 neighbor_function <- function(X,y){
   n <- length(X);
   MX <- X;
+  zz <- 0;
+
   for(j in 1:y){
     for(i in 1:n-1){
       Xtemp <- X;
-      k <- (i+j) %% n
-      if(Xtemp[k+1]>0){
-        Xtemp[i]<-Xtemp[i]+1;
-        Xtemp[k+1]<-Xtemp[k+1]-1;
+      if(i+j+1>n){
+        zz <- i+j-n+1;
+      }
+      else{
+        zz <- i+j+1;
+      }
+      z<-i+1;
+      if(X[zz]>0&X[z]>0){
+        Xtemp[z]<-Xtemp[z]+1;
+        Xtemp[zz]<-Xtemp[zz]-1;
         MX <- cbind(MX,Xtemp);
       }
       else{
@@ -25,6 +33,6 @@ neighbor_function <- function(X,y){
       }
     }
   }
-  MX <- MX[,2:(y*n+1)]
+  MX <- MX[,-1]
   return(MX)
 }

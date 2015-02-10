@@ -1,16 +1,20 @@
-#' Least Hill Climbing function
+#' Least Hill Climbing function - Graph
 #'
-#' This function implements hill climbing algorithm with least ascent
+#' This function implements hill climbing algorithm with Least ascent, generating a graph at the end of the result
 #' @param X,Co,y This takes in the input of the vector for set of inputs, the randomly generated coefficients, and the mode of connection
 #' @keywords steepest
 #' @export
 #' @examples
-#' lhc_function(X,Co,y)
+#' lehc_graph(X,Co,y)
 
-lhc_function <- function(X,Co,y){
+lehc_graph <- function(X,Co,y){
   XTemp <- X;
+  XNorm <- abs(profit_function(XTemp,Co));
   n <- length(X);
   Norm <- sum(X)+sum(X)^2;
+  XGraph <- c(profit_function(XTemp,Co));
+  k <- 0;
+  kD <- c(k);
   while(1==1){
     ProfitTemp <- profit_function(XTemp,Co);
     ArrayTemp <- ProfitTemp;
@@ -22,17 +26,26 @@ lhc_function <- function(X,Co,y){
     }
     if(which.max(ArrayTemp)==1){
       print(ArrayTemp[1]);
+      plot.new();
+      frame();
+      plot(kD,XGraph/XNorm, main="Least Hill Climbing",xlab="Number of Iterations", ylab="Relative Profit value");
       return(c(XTemp));
     }
     else{
       ITemp <- min(ArrayTemp[ArrayTemp>ArrayTemp[1]]);
       if(ITemp==ArrayTemp[1]){
         print(ArrayTemp[1]);
+        plot.new();
+        frame();
+        plot(kD,XGraph/XNorm, main="Least Hill Climbing",xlab="Number of Iterations", ylab="Relative Profit value");
         return(c(XTemp));
       }
       else{
         IndexTemp <- which(ArrayTemp == ITemp)
         XTemp <- NeighborTemp[,(IndexTemp-1)];
+        XGraph <- c(XGraph, profit_function(XTemp,Co));
+        k<-k+1;
+        kD <- c(kD,k);
         #print(XTemp);
         #Sys.sleep(0.2);
       }

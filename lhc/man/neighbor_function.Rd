@@ -4,10 +4,10 @@
 \alias{neighbor_function}
 \title{Neighborhood function}
 \usage{
-neighbor_function(X)
+neighbor_function(X, y)
 }
 \arguments{
-\item{X}{This takes in the input of the vector for set of inputs}
+\item{X}{This takes in the input of the vector for set of inputs, and the mode of connection (1st degree, 2nd degree, etc.)}
 }
 \description{
 This function generates all possible neighbors for the vector X, given in a matrix form

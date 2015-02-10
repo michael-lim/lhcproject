@@ -4,16 +4,16 @@
 \alias{shc_graph}
 \title{Steepest Hill Climbing function - Graph}
 \usage{
-shc_graph(X, Co)
+shc_graph(X, Co, y)
 }
 \arguments{
-\item{X,Co}{This takes in the input of the vector for set of inputs and the randomly generated coefficients}
+\item{X,Co,y}{This takes in the input of the vector for set of inputs, the randomly generated coefficients, and the mode of connection}
 }
 \description{
 This function implements hill climbing algorithm with steepest ascent, generating a graph at the end of the result
 }
 \examples{
-shc_function(X,Co)
+shc_function(X,Co,y)
 }
 \keyword{steepest}
 
