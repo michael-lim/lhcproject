@@ -1,0 +1,77 @@
+* using log directory ‘/Users/michaelnlim/Documents/coding/local-hillclimbing-michaelim/lhc.Rcheck’
+* using R version 3.1.1 (2014-07-10)
+* using platform: x86_64-apple-darwin13.1.0 (64-bit)
+* using session charset: UTF-8
+* using option ‘--no-build-vignettes’
+* checking for file ‘lhc/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘lhc’ version ‘1.0’
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘lhc’ can be installed ... WARNING
+Found the following significant warnings:
+  Warning: package ‘devtools’ was built under R version 3.1.2
+  Warning: /Users/michaelnlim/Documents/coding/local-hillclimbing-michaelim/lhc.Rcheck/00_pkg_src/lhc/man/lhc-package.Rd:32: All text must be in a section
+  Warning: /Users/michaelnlim/Documents/coding/local-hillclimbing-michaelim/lhc.Rcheck/00_pkg_src/lhc/man/lhc-package.Rd:33: All text must be in a section
+See ‘/Users/michaelnlim/Documents/coding/local-hillclimbing-michaelim/lhc.Rcheck/00install.out’ for details.
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... WARNING
+Non-standard license specification:
+  What license is it under?
+Standardizable: FALSE
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+shc_graph: no visible global function definition for ‘plotlabel’
+* checking Rd files ... WARNING
+prepare_Rd: lhc-package.Rd:32: All text must be in a section
+prepare_Rd: lhc-package.Rd:33: All text must be in a section
+* checking Rd metadata ... OK
+* checking Rd line widths ... OK
+* checking Rd cross-references ... WARNING
+Unknown package ‘<pkg>’ in Rd xrefs
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... WARNING
+Warning: parse error in file 'lhc-Ex.R':
+20:11: unexpected symbol
+19: 
+20: ~~ simple examples
+              ^
+* checking examples ... ERROR
+Running examples in ‘lhc-Ex.R’ failed
+The error most likely occurred in:
+
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+> ### Name: lhc-package
+> ### Title: What the package does (short line) ~~ package title ~~
+> ### Aliases: lhc-package lhc
+> ### Keywords: package
+> 
+> ### ** Examples
+> 
+> ~~ simple examples of the most important functions ~~
+Error: unexpected symbol in "~~ simple examples"
+Execution halted

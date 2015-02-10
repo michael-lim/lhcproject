@@ -1,0 +1,11 @@
+* installing *source* package ‘lhc’ ...
+** R
+** preparing package for lazy loading
+Warning: package ‘devtools’ was built under R version 3.1.2
+** help
+Warning: /Users/michaelnlim/Documents/coding/local-hillclimbing-michaelim/lhc.Rcheck/00_pkg_src/lhc/man/lhc-package.Rd:32: All text must be in a section
+Warning: /Users/michaelnlim/Documents/coding/local-hillclimbing-michaelim/lhc.Rcheck/00_pkg_src/lhc/man/lhc-package.Rd:33: All text must be in a section
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (lhc)

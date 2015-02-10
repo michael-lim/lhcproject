@@ -1,0 +1,9 @@
+lhc-package             What the package does (short line) ~~ package
+                        title ~~
+lhc_function            Least Hill Climbing function
+mhc_function            Median Hill Climbing function
+neighbor_function       Neighborhood function
+profit_function         Profit function
+rcoeff_function         Random Coefficient function
+shc_function            Steepest Hill Climbing function
+shc_graph               Steepest Hill Climbing function - Graph
