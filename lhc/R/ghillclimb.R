@@ -24,7 +24,7 @@ ghillclimb <- function(X,Co,y,m){
       ArrayTemp <- c(ArrayTemp,NProfitTemp);
     }
     if(which.max(ArrayTemp)==1){
-      print(ArrayTemp[1]/Norm*100);
+      #print(ArrayTemp[1]/Norm*100);
       plot.new();
       frame();
       plot(kD,XGraph/Norm*100, main="Hill Climbing",xlab="Number of Iterations", ylab="Relative Profit value");
@@ -35,11 +35,11 @@ ghillclimb <- function(X,Co,y,m){
       else if(m==2){ITemp <- median(ArrayTemp[ArrayTemp>ArrayTemp[1]]);}
       else if(m==3){ITemp <- min(ArrayTemp[ArrayTemp>ArrayTemp[1]]);}
       else {
-        print("Mode out of bound");
+        #print("Mode out of bound");
         return(0);
       }
       if(ITemp==ArrayTemp[1]){
-        print(ArrayTemp[1]/Norm*100);
+        #print(ArrayTemp[1]/Norm*100);
         plot.new();
         frame();
         plot(kD,XGraph/Norm*100, main="Hill Climbing",xlab="Number of Iterations", ylab="Relative Profit value");

@@ -21,7 +21,7 @@ hillclimb <- function(X,Co,y,m){
       ArrayTemp <- c(ArrayTemp,NProfitTemp);
     }
     if(which.max(ArrayTemp)==1){
-      print(ArrayTemp[1]/Norm*100);
+      #print(ArrayTemp[1]/Norm*100);
       return(c(XTemp));
     }
     else{
@@ -33,7 +33,7 @@ hillclimb <- function(X,Co,y,m){
         return(0);
       }
       if(ITemp==ArrayTemp[1]){
-        print(ArrayTemp[1]/Norm*100);
+        #print(ArrayTemp[1]/Norm*100);
         return(c(XTemp));
       }
       else{
