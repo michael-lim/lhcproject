@@ -1,6 +1,6 @@
 #' Profit function
 #'
-#' This function generates the profit function for a random set of constants
+#' This function generates the profit function for a random set of constants.
 #' @param X,Co This takes in the input of the vector for set of inputs and the randomly generated coefficients
 #' @keywords profit
 #' @export

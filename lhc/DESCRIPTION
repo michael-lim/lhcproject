@@ -1,9 +1,9 @@
-Package: lhc
+Package: lhcpackage
 Type: Package
-Title: What the package does (short line)
+Title: This project implements the local hill climbing method that was proposed by David Kane (Hutchin Hills), which tries to maximize the profit on a given n-dimensional landscape with various modes of connection.
 Version: 1.0
-Date: 2014-12-28
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Date: 2015-2-20
+Author: Michael Hyun Jae Lim
+Maintainer: Who to complain to <m@m-ike.me>
+Description: In an economic landscape, there are many local minima and maxima. While it is very hard to find the absolute maxima of the landscape, it is entirely possible to find many local maxima using the local hill climbing methods. The three methods entail: 1. steepest ascent, in which we look around the neighbors and move to the neighboring point with a maximum profit value, 2. median ascent in which we choose the median of the neighboring points with greater profit value, and 3. least ascent in which we choose the minimum profit value higher than the current profit value. It turns out that in many cases the least ascent has the most potential to optimize the given profit.
+License:  GNU GENERAL PUBLIC LICENSE Version 2
